@@ -34,7 +34,7 @@ public class ConfigurationTest extends AbstractInfinispanTest {
 
    @BeforeTest
    protected void setUpTempDir() {
-      tmpDirectory = TestingUtil.tmpDirectory(this);
+      tmpDirectory = TestingUtil.tmpDirectory(this.getClass());
       tmpDataDirectory = tmpDirectory + "/data";
       tmpExpiredDirectory = tmpDirectory + "/expired";
    }

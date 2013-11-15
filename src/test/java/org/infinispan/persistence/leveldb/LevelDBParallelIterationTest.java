@@ -20,7 +20,7 @@ public class LevelDBParallelIterationTest extends ParallelIterationTest {
 
    @Override
    protected void configurePersistence(ConfigurationBuilder cb) {
-      tmpDirectory = TestingUtil.tmpDirectory(this);
+      tmpDirectory = TestingUtil.tmpDirectory(this.getClass());
       new File(tmpDirectory).mkdirs();
       cb.persistence()
             .addStore(LevelDBStoreConfigurationBuilder.class)

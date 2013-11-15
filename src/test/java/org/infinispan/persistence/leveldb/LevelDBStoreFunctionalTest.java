@@ -14,7 +14,7 @@ public abstract class LevelDBStoreFunctionalTest extends BaseStoreFunctionalTest
 
    @BeforeClass
    protected void setUpTempDir() {
-      tmpDirectory = TestingUtil.tmpDirectory(this);
+      tmpDirectory = TestingUtil.tmpDirectory(this.getClass());
    }
 
    @AfterClass(alwaysRun = true)

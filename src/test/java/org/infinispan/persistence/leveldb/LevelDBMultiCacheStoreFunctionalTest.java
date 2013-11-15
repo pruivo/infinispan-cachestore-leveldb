@@ -18,7 +18,7 @@ public class LevelDBMultiCacheStoreFunctionalTest extends MultiStoresFunctionalT
 
    @BeforeClass
    protected void setPaths() {
-      tmpDir = new File(TestingUtil.tmpDirectory(this));
+      tmpDir = new File(TestingUtil.tmpDirectory(this.getClass()));
    }
 
    @BeforeMethod
